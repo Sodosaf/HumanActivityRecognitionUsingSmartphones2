@@ -67,16 +67,16 @@ Please make sure that your working directory is set to the folder "UCI HAR Datas
 The script will perform the following steps:
 
 
-	1. Loads in the main file for "train" (`X_train.txt`) and corresponding `y_train.txt` (key for type of activity) and `subject_train.txt` (key of number of test person). Each of them has 7352 rows.
-	2. Merges those 3 files together with `cbind()`
-	3. Does the same for the 3 "test" files
-	4. Merges the 2 tables for "train" and "test" to one large table with `rbind()`
-	5. Renames the first 2 columns to "Person" and "Activity". The next 561 columns are named with the value names from `features.txt` (see Code Book for further information)
-	6. Uses `grepl()` to find all columns that contain "mean" or "std". I decided to not only include names that have "mean"/"std" at the end (like _tBodyAcc-mean()-X_), but also those that have "mean"/"std" somewhere in the middle (like _fBodyAcc-meanFreq()-X_)
-	7. Uses a boolean vector to subset those columns
-	8. Replaces the activity numbers with the descriptive labels from `activity_labels.txt`
-	9. Uses the function `aggreate()` to calculate the mean for each variable, grouped by Person and Activity
-	10. Writes the resulting table into a new file named `aggregatedData.txt`
+1. Loads in the main file for "train" (`X_train.txt`) and corresponding `y_train.txt` (key for type of activity) and `subject_train.txt` (key of number of test person). Each of them has 7352 rows.
+2. Merges those 3 files together with `cbind()`
+3. Does the same for the 3 "test" files
+4. Merges the 2 tables for "train" and "test" to one large table with `rbind()`
+5. Renames the first 2 columns to "Person" and "Activity". The next 561 columns are named with the value names from `features.txt` (see Code Book for further information)
+6. Uses `grepl()` to find all columns that contain "mean" or "std". I decided to not only include names that have "mean"/"std" at the end (like _tBodyAcc-mean()-X_), but also those that have "mean"/"std" somewhere in the middle (like _fBodyAcc-meanFreq()-X_)
+7. Uses a boolean vector to subset those columns
+8. Replaces the activity numbers with the descriptive labels from `activity_labels.txt`
+9. Uses the function `aggreate()` to calculate the mean for each variable, grouped by Person and Activity
+10. Writes the resulting table into a new file named `aggregatedData.txt`
 
 
 Please note that whenever possible the script clears variables that are no longer required with the `rm()` function to save memory.

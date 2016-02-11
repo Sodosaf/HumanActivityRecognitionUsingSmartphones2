@@ -35,7 +35,7 @@ For this study 30 test persons carried a waist-mounted smartphone with embedded 
 
 |  test persons "train" |  test persons "test" |
 | :-------------------- |:---------------------|
-| 1   3   5   6   7     | 2   4   9  10  12    |
+| 1     3     5     6     7     | 2   4   9  10  12    |
 | 8   11  14  15  16    | 13  18  20  24       |   
 | 17  19  21  22  23    |                      |   
 | 25  26  27  28  29    |                      |   

@@ -1,20 +1,10 @@
 
-| Tables        | Are           | Cool  |
-| ------------- |:-------------:| -----:|
-| col 3 is      | right-aligned | $1600 |
-| col 2 is      | centered      |   $12 |
-| zebra stripes | are neat      |    $1 |
-
-
-
-
-
 
 
 |  Col. No.   |	 Variable name  |	 Meaning 	|  Values  |
 | ----------- | --------------- | --------- | -------- |
 
-1	"Person"                         	No. of test person	1-30
+1	|"Person"         |                	No. of test person|	1-30|
 2	"Activity"                       	Type of activity	WALKING
 WALKING_UPSTAIRS
 WALDING_DOWNSTAIRS

@@ -1,4 +1,8 @@
+######################
+
 Please note: I uploaded the codebook as pdf (not as *.md) because of easier formatting. You'll find all information about the steps that were performed to the date in both the codebook and this ReadMe-file.
+
+######################
 
 ## Human Activity Recognition Using Smartphones
 Repo for the course project of Coursera's "Getting and Cleaning Data" course

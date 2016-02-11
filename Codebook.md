@@ -12,8 +12,10 @@ LAYING
 
 The following time domain signals (prefix "t") were captured at a constant rate of 50 Hz. Then they were filtered, see `features_info.txt` for more information:
 
-3	  "tBodyAcc-mean()-X"               	body acceleration mean along X	
-4	  "tBodyAcc-mean()-Y"               	body acceleration mean along Y	
+3	  **"tBodyAcc-mean()-X"**
+  body acceleration mean along X	
+4	  **"tBodyAcc-mean()-Y"**
+  body acceleration mean along Y	
 5	  "tBodyAcc-mean()-Z"               	body acceleration mean along Z	
 6	  "tBodyAcc-std()-X"                 	body acceleration standard deviation along X	
 7	  "tBodyAcc-std()-Y"                 	body acceleration standard deviation along  Y	

@@ -4,20 +4,21 @@
 |  Col. No.   |	 Variable name  |	 Meaning 	|  Values  |
 | ----------- | --------------- | --------- | -------- |
 | 1	| "Person"         |  	No. of test person |	1-30 |
-|2	|"Activity"      |                 	Type of activity|	WALKING|
-WALKING_UPSTAIRS
+|2	|"Activity"      |                 	Type of activity|	WALKINGWALKING_UPSTAIRS
 WALDING_DOWNSTAIRS
 SITTING
 STANDING
 LAYING
-The following time domain signals (prefix "t") were captured at a constant rate of 50 Hz. Then they were filtered, see features_info.txt for more information
-3	"tBodyAcc-mean()-X"              	body acceleration mean along X	
-4	"tBodyAcc-mean()-Y"             	body acceleration mean along Y	
-5	"tBodyAcc-mean()-Z"              	body acceleration mean along Z	
-6	"tBodyAcc-std()-X"               	body acceleration standard deviation along X	
-7	"tBodyAcc-std()-Y"               	body acceleration standard deviation along  Y	
-8	"tBodyAcc-std()-Z"               	body acceleration standard deviation along Z	
-9	"tGravityAcc-mean()-X"           	gravity acceleration mean along X	
+
+The following time domain signals (prefix "t") were captured at a constant rate of 50 Hz. Then they were filtered, see `features_info.txt` for more information:
+
+3	  "tBodyAcc-mean()-X"               	body acceleration mean along X	
+4	  "tBodyAcc-mean()-Y"               	body acceleration mean along Y	
+5	  "tBodyAcc-mean()-Z"               	body acceleration mean along Z	
+6	  "tBodyAcc-std()-X"                 	body acceleration standard deviation along X	
+7	  "tBodyAcc-std()-Y"                 	body acceleration standard deviation along  Y	
+8	  "tBodyAcc-std()-Z"                 	body acceleration standard deviation along Z	
+9	  "tGravityAcc-mean()-X"           	  gravity acceleration mean along X	
 10	"tGravityAcc-mean()-Y"           	gravity acceleration mean along Y	
 11	"tGravityAcc-mean()-Z"           	gravity acceleration mean along Z	
 12	"tGravityAcc-std()-X"           	gravity acceleration standard deviation along X	
@@ -43,7 +44,7 @@ The following time domain signals (prefix "t") were captured at a constant rate 
 32	"tBodyGyroJerk-std()-Z"         	gyroscope jerk standard deviation along Z	
 33	"tBodyAccMag-mean()"             	body acceleration magnitude mean	
 34	"tBodyAccMag-std()"             	body acceleration magnitude standard deviation	
-35	"tGravityAccMag-mean()"      	gravity acceleration magnitude mean	
+35	"tGravityAccMag-mean()"      	    gravity acceleration magnitude mean	
 36	"tGravityAccMag-std()"           	gravity acceleration magnitude standard deviation	
 37	"tBodyAccJerkMag-mean()"         	body jerk magnitude mean	
 38	"tBodyAccJerkMag-std()"         	body jerk magnitude standard deviation	
@@ -51,6 +52,7 @@ The following time domain signals (prefix "t") were captured at a constant rate 
 40	"tBodyGyroMag-std()"             	gyroscope magnitude standard deviation	
 41	"tBodyGyroJerkMag-mean()"        	gyroscope jerk magnitude mean	
 42	"tBodyGyroJerkMag-std()"         	gyroscope jerk magnitude standard deviation	
+
 A Fast Fourier Transformation (FFT) was applied to the following variables. See features_info.txt for further information
 43	"fBodyAcc-mean()-X"              	body acceleration mean along X	
 44	"fBodyAcc-mean()-Y"             	body acceleration mean along Y	

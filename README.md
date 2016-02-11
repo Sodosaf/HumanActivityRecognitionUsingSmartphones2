@@ -1,6 +1,6 @@
 __________________________
 
-Please note: I uploaded the codebook as pdf (not as *.md) because of easier formatting. You'll find all information about the steps that were performed to the date in both the codebook and this ReadMe-file.
+Please note: I uploaded the codebook as pdf (not as *.md) because of easier formatting. You'll find all information about the steps that were performed to the original data in both the codebook and this ReadMe-file.
 
 __________________________
 

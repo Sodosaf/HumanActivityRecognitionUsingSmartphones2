@@ -1,4 +1,4 @@
-## HumanActivityRecognitionUsingSmartphones
+## Human Activity Recognition Using Smartphones
 Repo for the course project of Coursera's "Getting and Cleaning Data" course
 
 ###Project description
@@ -61,3 +61,22 @@ The two files `X_train.txt` and `X_test.test` contain the main data that we are 
 
 `y_train.txt` and `y_test.txt` are two seperate files with only one column and 7352 respectively 2947 rows that contains numbers between 1 and 6. Those numbers represent the executed activity for each of the observations according to the table shown above. 
 
+###Step-by-step description of run_analysis.R
+
+Please make sure that your working directory is set to the folder "UCI HAR Datase" before you run the script `run_analysis.R`.
+The script will perform the following steps:
+
+
+	1. Loads in the main file for "train" (`X_train.txt`) and corresponding `y_train.txt` (key for type of activity) and `subject_train.txt` (key of number of test person). Each of them has 7352 rows.
+	2. Merges those 3 files together with `cbind()`
+	3. Does the same for the 3 "test" files
+	4. Merges the 2 tables for "train" and "test" to one large table with `rbind()`
+	5. Renames the first 2 columns to "Person" and "Activity". The next 561 columns are named with the value names from `features.txt` (see Code Book for further information)
+	6. Uses `grepl()` to find all columns that contain "mean" or "std". I decided to not only include names that have "mean"/"std" at the end (like _tBodyAcc-mean()-X_), but also those that have "mean"/"std" somewhere in the middle (like _fBodyAcc-meanFreq()-X_)
+	7. Uses a boolean vector to subset those columns
+	8. Replaces the activity numbers with the descriptive labels from `activity_labels.txt`
+	9. Uses the function `aggreate()` to calculate the mean for each variable, grouped by Person and Activity
+	10. Writes the resulting table into a new file named `aggregatedData.txt`
+
+
+Please note that whenever possible the script clears variables that are no longer required with the `rm()` function to save memory.

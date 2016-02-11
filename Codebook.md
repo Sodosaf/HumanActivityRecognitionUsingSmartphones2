@@ -4,7 +4,7 @@
 |  Col. No.   |	 Variable name  |	 Meaning 	|  Values  |
 | ----------- | --------------- | --------- | -------- |
 
-|1	|"Person"         |                	No. of test person|	1-30|
+| 1	| "Person"         |  	No. of test person |	1-30 |
 2	"Activity"                       	Type of activity	WALKING
 WALKING_UPSTAIRS
 WALDING_DOWNSTAIRS
